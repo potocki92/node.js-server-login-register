@@ -1,0 +1,64 @@
+/* 
+=====================================
+=====================================
+              GENERAL
+=====================================
+=====================================
+*/
+
+/* RESET
+============================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+p,
+span {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+/* BODY
+============================================= */
+body {
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+
+/* LI
+============================================= */
+li {
+  list-style: none;
+}
+
+/* A HREF
+============================================= */
+
+/* SMOOTH SCROLL
+============================================= */
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.container {
+  @include mobile {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+  @include tablet {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
+}

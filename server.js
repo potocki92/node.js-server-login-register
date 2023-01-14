@@ -13,7 +13,7 @@ if (process.env.NODE_ENV !== "production") {
   const app = express();
   
   // // Passport Config
-  require("./passport-config")(passport);
+  require("./config/passport-config")(passport);
   
   // DB Config
   const db = require("./config/keys").mongoURI;

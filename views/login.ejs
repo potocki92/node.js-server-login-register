@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Invoices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/main.min.css" />
+  </head>
+
+  <body>
+    <head class="header"></head>
+    <main>
+      <div class="container container--register is-flex">
+        <h2 class="register__title">LOGIN</h2>
+        <%- include ("./partials/messages") %>
+        <form class="form" action="/login" method="POST">
+          <div class="form__box">
+            <% if (messages.error) { %>
+            <div class="alert alert-danger">
+              <strong><%= messages.error %></strong>
+            </div>
+            <% } %>
+          </div>
+          <div class="form__box">
+            <span class="form__text"> Username </span>
+            <input
+              class="form__input input"
+              placeholder="Username"
+              name="username"
+            />
+          </div>
+          <div class="form__box">
+            <span class="form__text"> Password </span>
+            <input
+              class="form__input input"
+              placeholder="Password"
+              type="password"
+              name="password"
+            />
+          </div>
+          <button class="form__button button">Submit</button>
+        </form>
+        <p class="login__text"><a href="/register">Register</a></p>
+      </div>
+    </main>
+  </body>
+</html>

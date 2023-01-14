@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Invoices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container container__register is-flex">
+        <h2 class="register__title">REGISTER</h2>
+        <%- include ("./partials/messages") %>
+        <form class="form" action="/register" method="POST" id="reg-form">
+          <div class="form__box">
+            <span class="form__text"> FirstName </span>
+            <input
+              type="text"
+              id="firstname"
+              autocomplete="off"
+              class="form__input input"
+              placeholder="First name"
+              name="firstname"
+              value="<%= typeof firstname != 'undefined' ? firstname : '' %>"
+            />
+          </div>
+          <div class="form__box">
+            <span class="form__text"> LastName </span>
+            <input
+              type="text"
+              id="lastname"
+              autocomplete="off"
+              class="form__input input"
+              placeholder="Last name"
+              name="lastname"
+              value="<%= typeof lastname != 'undefined' ? lastname : '' %>"
+            />
+          </div>
+          <div class="form__box">
+            <span class="form__text"> Username </span>
+            <input
+              type="text"
+              id="username"
+              autocomplete="off"
+              class="form__input input"
+              placeholder="Username"
+              name="username"
+              value="<%= typeof username != 'undefined' ? username : '' %>"
+            />
+          </div>
+          <div class="form__box">
+            <span class="form__text"> Password </span>
+            <input
+              id="password"
+              autocomplete="off"
+              class="form__input input"
+              placeholder="Password"
+              type="password"
+              name="password"
+              value="<%= typeof password != 'undefined' ? password : '' %>"
+            />
+          </div>
+          <button class="form__button button">Submit</button>
+        </form>
+        <p class="login__text">
+          <a href="/login">Login</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
