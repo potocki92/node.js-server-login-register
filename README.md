@@ -33,6 +33,7 @@ Musimy w pliku `package.json` zmienić pole `homepage`, zmieniając `nazwe_uzytk
 
 `USERNAME_FROM_MONGODB` - nazwa użytkowanika, którą utworzyliśmy w "SECURITY" -> "Database Access"
 `PASSWORD_FROM_MONGODB` - hasło nadane do użytkownika w "Database Access" (Ważne: Nie dodajemy hasła z głównego konta Atlasa)
+
 `CLUSTER_NAME_FROM_MONGODB`- nazwa clusteru w "Database Deployments"
 
 ## Schema
