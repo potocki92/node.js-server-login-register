@@ -17,8 +17,10 @@ var userDataSchema = new Schema(
       unique: false,
     },
   },
-  { collection: "InvoicesUsers" }
+  { collection: "Users" }
 );
+
 var UserData =
-  mongoose.model.Users || mongoose.model("InvoicesUsers", userDataSchema);
+  mongoose.model.Users || mongoose.model("Users", userDataSchema);
+  
 module.exports = UserData;

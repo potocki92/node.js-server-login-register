@@ -40,7 +40,7 @@ router.post("/register", async (req, res) => {
   if (errors.length > 0) {
     res.render("register.ejs", {
       errors,
-      username,
+      firstname,
       lastname,
       username,
       password,
@@ -51,14 +51,14 @@ router.post("/register", async (req, res) => {
         errors.push({ msg: "Username already exists" });
         res.render("register.ejs", {
           errors,
-          username,
+          firstname,
           lastname,
           username,
           password,
         });
       } else {
         const newUser = new User({
-          username,
+          firstname,
           lastname,
           username,
           password,

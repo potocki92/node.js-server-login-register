@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://potocki92.github.io/node.js-server-login-register",
   "scripts": {
     "devStart": "nodemon server.js",
     "dev": "nodemon server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potocki92/node.js-server-login-register.git"
+  },
+  "keywords": [],
+  "author": "Mateusz Potocki <mateusz.potocki@gmail.com>",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "dotenv": "^16.0.3",
