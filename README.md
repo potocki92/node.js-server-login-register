@@ -60,4 +60,4 @@ Włączyć tryp pracy.
 npm run dev
 ```
 
-W przeglądarce przejść na [http://localhost:3000](`http://localhost:3000`).
+W przeglądarce przejść na [http://localhost:3000](http://localhost:3000).
