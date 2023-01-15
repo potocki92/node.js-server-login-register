@@ -32,6 +32,7 @@ Musimy w pliku `package.json` zmienić pole `homepage`, zmieniając `nazwe_uzytk
 - Baza danych pobierana jest z [MongoDB](https://account.mongodb.com). W pliku `keys.js` zmieniamy wartości zmiennych `USERNAME_FROM_MONGODB`,`PASSWORD_FROM_MONGODB` oraz `CLUSTER_NAME_FROM_MONGODB` na swoje z konta, które utworzyliśmy.
 
 `USERNAME_FROM_MONGODB` - nazwa użytkowanika, którą utworzyliśmy w "SECURITY" -> "Database Access"
+
 `PASSWORD_FROM_MONGODB` - hasło nadane do użytkownika w "Database Access" (Ważne: Nie dodajemy hasła z głównego konta Atlasa)
 
 `CLUSTER_NAME_FROM_MONGODB`- nazwa clusteru w "Database Deployments"
